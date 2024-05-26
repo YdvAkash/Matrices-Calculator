@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Operations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Matrix Operations</h1>
+    <div class="matrix-order">
+        <label for="matrix-order">Matrix Order (n x m):</label>
+        <input type="number" id="rows" placeholder="Rows" min="1">
+        <input type="number" id="columns" placeholder="Columns" min="1">
+        <button onclick="createMatrices()">Create Matrices</button>
+    </div>
+    <div class="matrix-container" id="matrixContainer">
+        <!-- Matrices will be dynamically inserted here -->
+    </div>
+    <div class="operations" id="operations" style="display:none;">
+        <button onclick="addMatrices()">Add</button>
+        <button onclick="subtractMatrices()">Subtract</button>
+        <button onclick="multiplyMatrices()">Multiply</button>
+    </div>
+    <div id="result">
+        <h2>Result</h2>
+        <div class="matrix" id="matrixResult">
+            <!-- Result matrix will be dynamically inserted here -->
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

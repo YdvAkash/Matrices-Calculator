@@ -1,0 +1,145 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #86bde7, #9b59b6);
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.matrix-order {
+    margin-bottom: 20px;
+}
+
+.matrix-order input {
+    width: 60px;
+    height: 40px;
+    margin: 0 5px;
+    font-size: 1rem;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.matrix-order input:focus {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.matrix-order button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    transition: background 0.3s;
+}
+
+.matrix-order button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.matrix-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.matrix {
+    display: grid;
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    width: 50px;
+    height: 50px;
+    font-size: 1rem;
+    text-align: center;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+    transition: background 0.3s;
+}
+
+input[type="number"]:focus {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.operations {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+#result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#matrixResult {
+    display: grid;
+    grid-gap: 10px;
+    margin-top: 10px;
+}
+
+#matrixResult div {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
