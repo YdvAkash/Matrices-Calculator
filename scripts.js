@@ -92,6 +92,12 @@ function subtractMatrices() {
 function multiplyMatrices() {
     const rows = parseInt(document.getElementById('rows').value);
     const columns = parseInt(document.getElementById('columns').value);
+
+    if (rows !== columns) {
+        alert('Matrix multiplication currently supports square matrices only. Please use equal row and column counts.');
+        return;
+    }
+
     const A = getMatrixValues('a', rows, columns);
     const B = getMatrixValues('b', rows, columns);
     const result = Array.from({ length: rows }, () => Array(columns).fill(0));
